@@ -91,6 +91,13 @@ function saludarPersona(nombreDeUsuario2, apellidoUsuario){ /* estos y la 88 son
 saludarPersona(nombre2,apellido) /* la invoco para que se ejecute */
 
 
-/* FUNCIONES ANONIMAS */
+/* FUNCIONES ANONIMAS para ejecutarse debe guardarse
+en alguna variable*/
+
+const saludarPersona2=function
+(nombreDeUsuario, apellidoUsuario){
+    console.log(`Hola esta es una funcion anonima ${nombreDeUsuario}`)
+}
+saludarPersona2(nombre,apellido)
 
 
