@@ -100,4 +100,21 @@ const saludarPersona2=function
 }
 saludarPersona2(nombre,apellido)
 
+/* se crea un juego papel tijera */
+const juegoPiedraTijera=function(){
+    const opciones =['piedra','papel', 'tijera']
+    const opcionesCuenca= opciones.length -1
+    const randomOpciones=Math.round(Math.random()*opcionesCuenca)
+    const resultado = opciones[randomOpciones] 
+    if(eleccionUusuario === resultado){
+        alert('Empate')
+    } else if (eleccionUusuario === 'piedra'
+     && resultado === 'tijera'){
+        alert('gane')
+    }else if ( eleccionUusuario === 'piedra'
+     && resultado === 'papel')
+       alert('gano')
+}
+juegoPiedraTijera()
+
 
