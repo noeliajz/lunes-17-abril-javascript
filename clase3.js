@@ -69,3 +69,28 @@ const meses = [
 for(i=0; i< meses.length; i++){
     document.write(`<li>${meses[i]}</li>`) /* [posicion] */
 }
+
+/* FUNCIONES DECLARATIVAS: BLOQUES DE CODIGO 
+PORQUE HAY QUE PONERLE UN NOMBRE CON LA DESVENTAJA
+QUE si alguien lo llama = se rompe por eso se usan funciones
+no delcaradas o anonimas  */
+let nombre='noe'
+
+function saludarPersona(nombreDeUsuario){
+    console.log(`Hola ${nombreDeUsuario}`)
+}
+saludarPersona(nombre) /* la invoco para que se ejecute */
+
+/* ---------- */
+let nombre2='julieta'
+let apellido='perez'
+
+function saludarPersona(nombreDeUsuario2, apellidoUsuario){ /* estos y la 88 son parametros? preg */
+    console.log(`Hola ${nombreDeUsuario2} ${apellidoUsuario}`)
+}
+saludarPersona(nombre2,apellido) /* la invoco para que se ejecute */
+
+
+/* FUNCIONES ANONIMAS */
+
+
